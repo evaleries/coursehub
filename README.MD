@@ -1,3 +1,3 @@
-# Web Learning for local
+# CourseHub
 
-Simple e-learning for local use only. Built from Laravel
+Project PWeb
