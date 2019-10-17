@@ -410,12 +410,20 @@ body {
         box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.5);
     }
 
-    .grid-images {
+    .grid-certificates {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "pics .";
+    }
+    
+    .pics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: ". ." ". .";
+        grid-gap: 1em 3em;
+        grid-area: pics;
     }
 
     
