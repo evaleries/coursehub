@@ -1,6 +1,12 @@
 /**
  * Components
  */
+
+img.img-semi-circle {
+    width: 100%;
+    border-radius: 3px;
+}
+
 a.btn {
     text-decoration: none;
 }
