@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+.logo{
+    width: 100%;
+    display: block;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 80px;
+}
+/* this for logo */
+/* <========================================================================================> */
+.logo img {
+    width: 150px;
+}
+
+.login-box {
+    background-color: red;
+    min-height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.login-box .row-option {
+    background-color: white;
+    overflow: hidden;
+    min-height: 60px;
+    line-height: 55px;
+}
+
+.login-box .row-option a {
+    text-decoration: none;
+}
+
+.go-login,.go-create-account {
+    height: inherit;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.row-input{
+    border: 1px solid gray;
+    min-height: 10px;
+    width: 100%;
+    background-color: white;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.row-input .input-group {
+    width: 100%;
+    height: 80px;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+}
+
+.row-input .input-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.row-input .input-group .input-std, .input-fname, .input-lname {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding:10px 10px;
+}
+
+
+
+.input-help {
+    float: right;
+}
+
+.icon{
+    float: right;
+    margin-right: 10px;
+    margin-top: -27px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.div-help .input-help , .input-helpp {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding:10px 10px;
+}
+
+.input-group p {
+    text-align: center;
+}
+
+.buttonsubmit {
+    color: white;
+    background-color: #2C9ED5;
+    width: 100%;
+    padding: 6px 12px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
