@@ -19,7 +19,7 @@
 }
 
 .login-box {
-    height: 400px;
+    min-height: 400px;
     width: 400px;
     margin: 0 auto;
 }
@@ -43,7 +43,8 @@
 }
 
 .row-input{
-    border: 1px solid gray;
+    padding: 30px 40px 60px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
     min-height: 10px;
     width: 100%;
     background-color: white;
@@ -95,8 +96,11 @@
     box-sizing: border-box;
     padding:10px 10px;
 }
-
+.input-group:last-child {
+    margin-top: 50px;
+}
 .input-group p {
+    margin-top: 10px;
     text-align: center;
 }
 

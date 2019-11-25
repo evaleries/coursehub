@@ -45,12 +45,14 @@
 }
 
 .row-input{
-    border: 1px solid gray;
+    padding: 30px 30px 60px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     min-height: 10px;
     width: 100%;
     background-color: white;
     padding-top: 30px;
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .row-input .input-group {
@@ -100,7 +102,13 @@
     padding:10px 10px;
 }
 
+.input-group:last-child {
+    margin-top: 0px;
+
+}
+
 .input-group p {
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -117,4 +125,9 @@
     vertical-align: middle;
     border: 1px solid transparent;
     border-radius: 5px;
+}
+
+.term {
+    margin-top: 20px;
+    text-align: center;
 }
