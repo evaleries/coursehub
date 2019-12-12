@@ -1,0 +1,65 @@
+<section>
+    <div class="d-flex s-b align-content ac-c">
+        <div class="content-container pd-l-50">
+            <div class="bg-default pd-r-50 pd-l-10 pd-b-30 flex-basis-50p">
+                <h3 class="pd-t-30 pd-b-10">Filter By:</h3>
+                <p class="text-upper pd-t-10 pd-b-10">Courses Type</p>
+                <ul class="no-style">
+                    <li class="pd-10"><input type="checkbox" value="fundamentals" name="filters[]"> Fundamentals</li>
+                    <li class="pd-10"><input type="checkbox" value="advanced_career_training"  name="filters[]"> Advanced Career Training</li>
+                </ul>
+                <p class="text-upper pd-t-30">Courses Topics</p>
+                <ul class="no-style">
+                    <li class="pd-10"><input type="checkbox" value="advanced_career_training" name="filters[]"> Advanced Career Training (46)</li>
+                    <li class="pd-10"><input type="checkbox" value="business" name="filters[]"> Business (180)</li>
+                    <li class="pd-10"><input type="checkbox" value="high_school" name="filters[]"> Career Online High School (10)</li>
+                    <li class="pd-10"><input type="checkbox" value="computer_application" name="filters[]"> Computer Applications (129)</li>
+                    <li class="pd-10"><input type="checkbox" value="computer_application" name="filters[]"> Computer Science (40)</li>
+                </ul>
+                
+                <p class="text-upper pd-t-30">Duration of Access</p>
+                <ul class="no-style">
+                    <li class="pd-10"><input type="checkbox" value="6" name="filters[]"> 0-6 weeks</li>
+                    <li class="pd-10"><input type="checkbox" value="12" name="filters[]"> 6-12 weeks</li>
+                    <li class="pd-10"><input type="checkbox" value="24" name="filters[]"> 12-24 weeks</li>
+                    <li class="pd-10"><input type="checkbox" value="25" name="filters[]"> 24+ weeks</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-container pd-l-50">
+            <h3>Search Result</h3>
+            <form action="search" class="pd-t-30 pd-b-50">
+                <input type="text" name="q" class="mr-r-10 pd-10 round" id="search-box" placeholder="Search Courses">
+                <input type="submit" class="btn btn-primary">
+            </form>
+            <div class="d-flex justify-content s-b flex-basis-50p">
+                <h4 style="width: 50%;">Courses for '<span id="search-query-text"></span>'</h4>
+                <h5 class="text-right pd-r-30" style="width: 50%;">Sort By: Alphabetical A-Z</h5>
+            </div>
+            <div class="search-result">
+                <div class="search-item pd-t-30 pd-b-30">
+                    <div class="search-item-img">
+                        <img class="lazy img-semi-circle" src="assets/img/study_group3.jpg" alt="Teaching">
+                    </div>
+                    <div class="search-item-info">
+                        <a href="#course" class="no-style"><h4>A-Z to Grant</h4></a>
+                        <p class="pd-t-30 pd-b-30">Learn how to research and develop relationships with potential funding sources, organize grant writing campaigns, and prepare proposals.</p>
+                        <p><i class="fa fa-calendar"></i> Starting September 12, 2019 | October 16</p>
+                        <p><i class="fa fa-clock-o"></i> 6 Weeks/124 courses</p>
+                    </div>
+                </div>
+                <div class="search-item pd-t-30 pd-b-30">
+                    <div class="search-item-img">
+                        <img class="lazy img-semi-circle" src="assets/img/study_group4.jpg" alt="Teaching">
+                    </div>
+                    <div class="search-item-info">
+                        <a href="#course" class="no-style"><h4>A-Z to Grant Writing II - Beyond the basic</h4></a>
+                        <p class="pd-t-30 pd-b-30">Sharpen your grant research skills, write the most important sections of grant applications, and learn the types of grants available.</p>
+                        <p><i class="fa fa-calendar"></i> Starting September 12, 2019 | October 16</p>
+                        <p><i class="fa fa-clock-o"></i> 6 Weeks/124 courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

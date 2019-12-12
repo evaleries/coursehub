@@ -12,7 +12,7 @@
 
     <!-- Prefetch -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="https://use.fontawesome.com">
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -22,23 +22,23 @@
     <link rel="manifest" href="site.webmanifest">
     <!-- Plugin  -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/78a9ef044f.js"></script>
 </head>
 
-<body>
+<body class="spa-template">
 
-    <header>
+    <header id="header">
         <div class="logo">
-            <a href="/">
+            <a class="spa" data-name="home" href="/">
                 <img src="assets/img/logo.png" alt="CourseHub logo">
             </a>
         </div>
         <ul class="nav-left">
             <li class="nav-link">
-                <a href="#courses">Courses</a>
+                <a href="#search?q=All Courses">Courses</a>
             </li>
             <li class="nav-link">
-                <a href="#resources">Resources</a>
+                <a href="#search?q=Resources">Resources</a>
             </li>
         </ul>
         <ul class="nav-right">
@@ -46,158 +46,30 @@
                 <a href="login.html">Login</a>
             </li>
             <li class="nav-link">
-                <a href="#contact">Contact Us</a>
+                <a href="javascript:;" id="btnContactUs">Contact Us</a>
                 <i class="fa fa-envelope" aria-hidden="true"></i>
             </li>
         </ul>
     </header>
-    <div class="banner-container">
-        <div class="banner">
-            <div class="home-banner">
-                <div class="home-banner_title">
-                    <h2>Master new subject with our online course</h2>
-                </div>
-                <div class="home-banner_subtitle">
-                    <p>Learn new skills online - and change your life for better</p>
-                </div>
-                <div class="home-banner_search">
-                    <form class="form-home-search" action="#" merthod="POST">
-                        <div class="form-ctrl">
-                            <i class="fa fa-search fa-sm"></i>
-                            <input type="text" id="search-box" placeholder="Search course">
-                            <input type="button" class="btn-primary" value="Search">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+
+    <div id="container">
     </div>
-
-    <section id="courses-needs">
-        <div class="content-container">
-            <div class="section-lead">
-                <h3>Courses that fit your learning needs</h3>
-            </div>
-            <div class="cards">
-                <div class="card card-rounded">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <img class="lazy" data-srcset="assets/img/study_group4.jpg" alt="Teaching">
-                        </div>
-                        <h5 class="card-title">Advanceed Career Training</h5>
-                        <p class="card-subtitle">Prepare for your new career or recognized certification</p>
-                    </div>
-                    <div class="card-content">
-                        <p>These expert-developed courses offer a flexible way to learn. Open enrollments let you start any time. And with up to 18 months access, you can learn when it’s convenient to you. Each course also comes with a dedicated Student Advisor, so you’re supported throughout your learning journey.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#courses" class="btn btn-primary">See All Course</a>
-                    </div>
-                </div>
-                <div class="card card-rounded">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <img class="lazy" data-srcset="assets/img/study_alone.jpg" alt="Teaching">
-                        </div>
-                        <h4 class="card-title">Fundamentals</h4>
-                        <p class="card-subtitle">Gain new personal and professional skills</p>
-                    </div>
-                    <div class="card-content">
-                        <p>Two ways to learn! In our instructor-led courses, you study and interact with a cohort over a six-week schedule. Courses start monthly with twice-weekly lesson plans. For the independent learner, our self-paced courses provide access to all lessons immediately with up to three months to complete.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#courses" class="btn btn-primary">See All Course</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="content-container">
-            <div class="section-lead">
-                <h3>Why Choose Us?</h3>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <i class="fa fa-book fa-5x text-primary"></i>
-                        </div>
-                        <p class="card-subtitle">The most in-depth courses online</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <i class="fa fa-paypal fa-5x text-primary"></i>
-                        </div>
-                        <p class="card-subtitle">Cheap pricing with extra discounts</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-img">
-                            <i class="fa fa-users fa-5x text-primary"></i>
-                        </div>
-                        <p class="card-subtitle">Financial assistance for career training courses</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonial">
-        <div class="content-container">
-            <div class="testimonials-section">
-                <div class="section-lead pd-t-30">
-                    <h3>We'll set you on your career path</h3>
-                </div>
-                <div class="d-flex justify-content s-a pd-t-50">
-                    <i class="fa fa-comment fa-5x pd-l-50 pd-r-30"></i>
-                    <p class="d-inline pd-r-30">
-                        <span style="word-wrap: break-word">"My Pharmacy Technician course was remarkable! I found the lessons to be really informative and the online learning experience was quite user friendly."</span>
-                        <br><br>
-                        <span> - California State University East Bay</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="content-container">
-            <div class="grid-certificates">
-                <div class="pics pd-l-50">
-                    <img src="assets/img/study_group.jpg" class="img-semi-circle" alt="Teaching">
-                    <img src="assets/img/study_group1.jpg" class="img-semi-circle" alt="Teaching">
-                    <img src="assets/img/study_group2.jpg" class="img-semi-circle" alt="Teaching">
-                    <img src="assets/img/study_group4.jpg" class="img-semi-circle" alt="Teaching">
-                </div>
-                <div class="pd-l-50">
-                    <h3 class="inline pd-b-30">Certified by local schools employeer know</h3>
-                    <p class="inline pd-b-30">Improve your job prospects with a certificate that employers will recognize. When you complete your CourseHub online, you receive a certificate from one of our 2,000 educational partners.</p>
-                    <a href="#" class="btn btn-primary">Take a course</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer>
         <div class="footer">
             <div>
                 <h4>Courses</h4>
                 <ul class="no-style">
-                    <li><a class="no-style text-white" href="#">Arts and Design</a></li>
-                    <li><a class="no-style text-white" href="#">Business</a></li>
-                    <li><a class="no-style text-white" href="#">Career Online High School</a></li>
-                    <li><a class="no-style text-white" href="#">Computer Applications</a></li>
-                    <li><a class="no-style text-white" href="#">Computer Science</a></li>
-                    <li><a class="no-style text-white" href="#">Construction and Trades</a></li>
-                    <li><a class="no-style text-white" href="#">Health and Fitness</a></li>
-                    <li><a class="no-style text-white" href="#">Legal</a></li>
-                    <li><a class="no-style text-white" href="#">Math and Science</a></li>
-                    <li><a class="no-style text-white" href="#">Writing</a></li>
+                    <li><a class="no-style text-white" href="#course">Arts and Design</a></li>
+                    <li><a class="no-style text-white" href="#course">Business</a></li>
+                    <li><a class="no-style text-white" href="#course">Career Online High School</a></li>
+                    <li><a class="no-style text-white" href="#course">Computer Applications</a></li>
+                    <li><a class="no-style text-white" href="#course">Computer Science</a></li>
+                    <li><a class="no-style text-white" href="#course">Construction and Trades</a></li>
+                    <li><a class="no-style text-white" href="#course">Health and Fitness</a></li>
+                    <li><a class="no-style text-white" href="#course">Legal</a></li>
+                    <li><a class="no-style text-white" href="#course">Math and Science</a></li>
+                    <li><a class="no-style text-white" href="#course">Writing</a></li>
                 </ul>
             </div>
             <div>
@@ -210,9 +82,9 @@
             <div>
                 <h4>Resources</h4>
                 <ul class="no-style">
-                    <li><a class="no-style text-white" href="#about">About Course Hub</a></li>
-                    <li><a class="no-style text-white" href="#">Corporate Training</a></li>
-                    <li><a class="no-style text-white" href="#blog">Blog</a></li>
+                    <li><a class="no-style text-white spa" data-name="about" href="about.html">About Course Hub</a></li>
+                    <li><a class="no-style text-white" href="#course">Corporate Training</a></li>
+                    <li><a class="no-style text-white" href="#">Blog</a></li>
                 </ul>
                 <h4>Connect</h4>
                 <ul class="no-style social-icons">
@@ -223,7 +95,33 @@
         </div>
         <p class="footer-copyright">Copyright © 2019 CourseHub</p>
     </footer>
+
+    <a id="toHeader" class="float">
+        <i class="fa fa-arrow-up my-float"></i>
+    </a>
     
+    <div id="modalContact" class="modal">
+        <div class="modal-content">
+            <span class="close" style="float: right;">&times;</span>
+            <h3 class="pd-b-30 text-primary">Contact Us</h3>
+            <form id="contactForm" method="POST" class="pd-t-10">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstname" class="contact" placeholder="First Name" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="contact" placeholder="Last name">
+
+                <label for="email">Email</label>
+                <input type="email" id="lname" name="email" class="contact" placeholder="Email" required>
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" class="contact" placeholder="Message" style="height:200px" required></textarea>
+
+                <input type="submit" class="btn btn-lg btn-primary" value="Submit">
+            </form>
+        </div>
+    </div>
+
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>

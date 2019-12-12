@@ -28,18 +28,33 @@ a.no-style {
 }
 
 .btn {
+    line-height: 1.42;
+    border: 1px solid transparent;
     border-radius: 5px;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 12px;
+    white-space: nowrap;
     background-color: white;
     color: black;
-    padding: 14px 28px;
-    font-size: 16px;
     cursor: pointer;
+    word-wrap: break-word;
+}
+
+.btn-lg {
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 5.8px;
+    line-height: 1.33;
+}
+.btn-sm {
+    padding: 5px 10px;
+    line-height: 1.4em;
+    font-size: 12px;
 }
 
 .btn-primary {
     color: white;
-    font-size: 13px;
-    width: 100px;
     background: #3b55e6;
     text-transform: uppercase;
 }
@@ -56,7 +71,7 @@ a.no-style {
 
 .btn-info {
     border-color: #2196F3;
-    color: dodgerblue;
+    /* color: dodgerblue; */
 }
 
 .btn-info:hover {
@@ -84,16 +99,52 @@ a.no-style {
     color: rgb(185, 184, 184);
 }
 
+.bg-dark-purple {
+    background-color: #3b4161;
+}
+
+.bg-semi-purple {
+    background-color: #727fc5;
+}
+
+.bg-blue {
+    background-color: #3b55e6;
+}
+
+.bg-default {
+    background-color: #e8e0e0;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     height: 100vh;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 .d-flex {
@@ -112,6 +163,35 @@ body {
     justify-content: space-around;
 }
 
+.align-content {
+    align-content: stretch !important;
+}
+
+.align-content.ac-c {
+    align-content: center;
+}
+
+.align-content.ac-s-a {
+    align-content: space-around;
+}
+
+.align-content.ac-s-b {
+    align-content: space-between;
+}
+
+.align-content.ac-f-s {
+    align-content: flex-start;
+}
+
+.align-content.ac-f-e {
+    align-content: flex-end;
+}
+
+.col-50 {
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
 .d-inline{
     display: inline;
 }
@@ -127,6 +207,9 @@ body {
     padding: 30px 30px 30px 30px;
 }
 
+.pd-t-10 {
+    padding-top: 10px;
+}
 .pd-t-30 {
     padding-top: 30px;
 }
@@ -134,6 +217,9 @@ body {
     padding-top: 50px;
 }
 
+.pd-r-10 {
+    padding-right: 10px;
+}
 .pd-r-30 {
     padding-right: 30px;
 }
@@ -141,6 +227,9 @@ body {
     padding-right: 50px;
 }
 
+.pd-l-10 {
+    padding-left: 10px;
+}
 .pd-l-30 {
     padding-left: 30px;
 }
@@ -148,6 +237,9 @@ body {
     padding-left: 50px;
 }
 
+.pd-b-10 {
+    padding-bottom: 10px;
+}
 .pd-b-30 {
     padding-bottom: 30px;
 }
@@ -155,14 +247,34 @@ body {
     padding-bottom: 50px;
 }
 
-
+.mr-t-10 {
+    margin-top: 10px;
+}
 .mr-t-30 {
     margin-top: 30px;
+}
+.mr-b-10 {
+    margin-bottom: 10px;
 }
 .mr-b-30 {
     margin-bottom: 30px;
 }
+.mr-l-10 {
+    margin-left: 10px;
+}
+.mr-l-30 {
+    margin-left: 30px;
+}
+.mr-r-10 {
+    margin-right: 10px;
+}
+.mr-r-30 {
+    margin-right: 30px;
+}
 
+.flex-basis-50p {
+    flex-basis: 50%;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -233,6 +345,10 @@ body {
         padding-left: 12px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    input.round {
+        border-radius: 5px;
     }
 
     .banner-container {
@@ -317,18 +433,18 @@ body {
         background-color: white;
     }
 
-    .form-home-search input[type=button] {
+    .form-home-search input[type=submit] {
         height: 25px;
     }
 
-    .form-home-search input[type=button]:hover {
+    .form-home-search input[type=submit]:hover {
         cursor: pointer;
     }
 
     section {
         display: block;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .section-lead {
@@ -363,6 +479,21 @@ body {
         width: 30%;
     }
 
+    .card-border {
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        overflow: hidden;
+        width: 30%;
+    }
+
+    .card.card-shadow {
+        box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.2)
+    }
+
     .card.card-rounded {
         border-radius: 5px;
     }
@@ -394,7 +525,6 @@ body {
 
     .card-content {
         margin: 0 0 20px 0;
-        text-align: center;
     }
 
     .card-title {
@@ -410,7 +540,7 @@ body {
 
     .testimonials-section {
         display: block;
-        height: 300px;
+        height: 230px;
         background-color: dodgerblue;
         color: white;
         box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.5);
@@ -476,5 +606,102 @@ body {
     ul.social-icons li a {
         color: white;
     }
+
+    .search-result {
+        display: block;
+    }
+
+    .search-item {
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: ". .";
+    }
+
+    .search-item-border {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+
+    .search-item-info {
+        padding: 10px 5px 5px 12px;
+    }
+
+    .search-item-img > img {
+        justify-items: center;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    input.contact, textarea.contact {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color: dodgerblue;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        box-shadow: 2px 2px 3px #999;
+    }
+
+    .float:hover {
+        cursor: pointer;
+    }
     
+    .my-float{
+        margin-top:22px;
+    }
+
+    .clear-margin {
+        margin: 0 0 0 0;
+    }
 }
